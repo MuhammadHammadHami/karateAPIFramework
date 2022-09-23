@@ -12,3 +12,13 @@ Feature: Test Get Users API
       * print 'Get All Users'
       * print '=============================================='
       * print response
+      
+      Scenario: Get User by ID
+        * path '/users/1'
+        * method GET
+        * status 200
+        * print '=============================================='
+        * print 'Get User by ID'
+        * print '=============================================='
+        * print response
+        
